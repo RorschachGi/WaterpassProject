@@ -12,6 +12,7 @@ import com.example.waterpassproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    //viewBinding
     lateinit var binding: ActivityMainBinding
 
     lateinit var sManager: SensorManager
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-        //Регистрируем слушатель
+        //Регистрируем слушатели
         sManager.registerListener(sListener, sensor, SensorManager.SENSOR_DELAY_NORMAL )
         sManager.registerListener(sListener, sensorSecond, SensorManager.SENSOR_DELAY_NORMAL)
     }
